@@ -19,7 +19,6 @@ class TodoListWidget extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    padding: EdgeInsets.only(top: 10),
                     child: Text("Todo List", style: TextStyle(fontSize: 24)),
                   ),
                   ListView.builder(
@@ -61,7 +60,7 @@ class TodoListWidget extends StatelessWidget {
                                 },
                               ),
                               Text(
-                                "${state.todos![index].id}. ${state.todos![index].title}",
+                                "${state.todos![index].id} ${state.todos![index].title}",
                                 maxLines: 2,
                               ),
                             ],
