@@ -23,3 +23,11 @@
 Images showing operations:
 
 ![Alt text](<todo list.png>) ![Alt text](<todo list-create todo.png>) ![Alt text](<todo list-deleted todo.png>)
+
+
+Instructions on How to run this:
+
+1) open server folder in one window of visual studio, choose to run server.dart.
+2) open client in another window of visual studio, do pub get, run it.
+3) Make sure to have protoc plugin installed and set in env, flutter and dart installed too. You may not have to install dart seperately as it comes within flutter but make sure to set env well. 
+4) make sure to run flutter doctor if something doesn't look right.
