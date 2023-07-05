@@ -1,0 +1,25 @@
+
+1)flutter grpc client- the one which we see on UI.
+
+2) dart server- the one running continiously in backround and reponding to TodoRequests from the client in the form of TodoResponse, listnening at port 5000 on local host, serializes the data to Todo object.
+
+3) TodoServices defined handle- reading todos, creating todos, updating the status of todos, deleting todo.
+
+4) In memory datastructure to handle data needs.
+
+5) Model of todo has 3 bits id, title,completed.
+
+6) Proto buffer of todos have been created using protoc plugin 21 version.
+
+7) Todo Bloc has been created to handle all TodoService calls.
+
+8)Floater Bloc has been created to handle toggling of create Todos modal.
+
+9) CTA- clicking on check- changes status of todo, deep press deletes the todo (shows snackbar), when length of todos is null the todolist shows progress indicator, click on floating action button shows create todo modal ; when we add the title in that text box and click on Create todo the modal disappears.
+
+10)readTodo functions by reading the stream of todos, so if any changes accross any device, the changes will be immediately visible.
+
+11) Stream Controller is listening to all the events.
+Images showing operations:
+
+![Alt text](<todo list.png>) ![Alt text](<todo list-create todo.png>) ![Alt text](<todo list-deleted todo.png>)
